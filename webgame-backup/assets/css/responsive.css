@@ -1,0 +1,170 @@
+@media (max-width:1200px) {}
+
+@media (max-width:992px) {
+  .destop-nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: block;
+  }
+
+
+
+  .navbar-toggler {
+    cursor: pointer;
+    padding: 5px 10px;
+    border: 1px solid var(--white);
+    border-radius: 2px;
+  }
+
+  .navbar-toggler svg {
+    fill: var(--pr-color);
+  }
+
+  .navbar ul {
+    display: inline-block;
+  }
+
+  .navbar ul li {
+    margin-bottom: 10px;
+  }
+
+  .offcanvas-menu>* {
+    margin-bottom: 20px;
+  }
+
+  .offcanvas-menu {
+    overflow-y: auto;
+    width: 250px;
+    height: 800px;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    z-index: 1040;
+    max-width: 100%;
+    background: #fff;
+    padding: 15px;
+  }
+
+  #close_offcanvas {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+  }
+
+
+
+  .backdrop {
+    background: #000;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    opacity: .5;
+    z-index: 2;
+  }
+
+  .backdrop.fade {
+    display: none;
+  }
+
+  .backdrop.show {
+    display: block;
+  }
+
+  .hero-sec::before, .hero-sec::after{
+    display: none;
+  }
+
+}
+
+@media (max-width:768px) {
+  .single-page {
+    padding: 20px;
+  }
+
+
+  .flex-column-reverse {
+    flex-direction: column-reverse !important;
+  }
+
+
+
+}
+
+@media (max-width:576px) {
+  .logo-img img {
+    width: 70%;
+  }
+
+  .d-grid,
+  .author-social,
+  .foot-links {
+    display: block !important;
+  }
+
+  .author-social .wg-social-links {
+    margin-top: 15px;
+  }
+
+  .single-page h1 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
+  .sidebar {
+    padding: 0 !important;
+  }
+
+  .wg-pros-cons-wrap {
+    display: block;
+  }
+
+  .all-page {
+    padding: 20px;
+  }
+
+  .hero-section .row>div:nth-child(2) .wg-card-content {
+    text-align: left;
+  }
+
+  .hero-section .row>div:nth-child(2) .wg-timeline {
+    left: 0px !important;
+    transform: unset;
+  }
+
+  .sec-4 .d-grid :is(.img-placeholder,
+    .img-placeholder img) {
+    border-radius: var(--rad);
+  }
+
+  .importants-links {
+    margin-bottom: 20px !important;
+  }
+
+  .copyright {
+    display: block;
+    text-align: left;
+  }
+
+  .wg-pros-cons-wrap .pros-cons {
+    padding: 25px 30px;
+  }
+
+  .single-page .feature-box .wg-timeline {
+    display: block;
+  }
+
+  .wg-widget-wrap {
+    padding: 30px 20px 20px 20px;
+  }
+
+  .foot-links>* {
+    margin-bottom: 20px;
+  }
+
+}

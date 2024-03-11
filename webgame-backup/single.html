@@ -1,0 +1,1104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Single Page</title>
+  <link rel="icon" type="image/png" href="assets/images/fav.svg">
+  <link rel="stylesheet" href="assets/css/layout.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+
+  <!-- header Start-->
+  <header class="sec-gap">
+    <div class="container">
+
+      <div class="destop-nav">
+        <div class="site-navigation">
+          <a class="logo-img" href="index.html">
+            <img src="assets/images/logo.svg" alt="logo" class="img-fluid">
+          </a>
+
+          <div class="g-35 d-flex align-items-center">
+            <nav class="navbar">
+              <ul>
+                <li><a href="#" class="active">Guide</a></li>
+                <li><a href="#">How To</a></li>
+                <li><a href="#">Troubleshoot</a></li>
+                <li><a href="#">Write For Us </a></li>
+                <li><a href="#">Internet</a></li>
+              </ul>
+            </nav>
+
+            <div class="search-form">
+              <form role="search" action="#">
+                <input type="search" placeholder="Search Keyword..." value="" name="s" title="Search for:"
+                  required="" />
+                <button type="submit" class="search-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                    <path d="M7.333 12.667A5.333 5.333 0 1 0 7.333 2a5.333 5.333 0 0 0 0 10.667ZM14 14l-2.9-2.9"
+                      stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                  </svg>
+                </button>
+              </form>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="mobile-nav">
+        <div class="site-navigation">
+
+          <a class="logo-img" href="index.html">
+            <img src="assets/images/logo.svg" alt="logo" class="img-fluid" />
+          </a>
+
+          <div class="mobile-canavs">
+            <button class="navbar-toggler" type="button">
+              <svg width="20" height="20" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M0 96c0-17.7 14.3-32 32-32h384c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zm64 160c0-17.7 14.3-32 32-32h384c17.7 0 32 14.3 32 32s-14.3 32-32 32H96c-17.7 0-32-14.3-32-32zm384 160c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32h384c17.7 0 32 14.3 32 32z">
+                </path>
+              </svg>
+            </button>
+            <div class="offcanvas-menu">
+              <span id="close_offcanvas">
+                <svg width="20" height="20" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="m12.709 4.368-8 8m0-8 8 8" stroke="#000" stroke-linecap="round" stroke-linejoin="round"
+                    stroke-width="2" />
+                </svg>
+              </span>
+              <!--  -->
+
+              <div class="search-form">
+                <form role="search" action="#">
+                  <input type="search" placeholder="Enter To Search Here..." value="" name="s" title="Search for:"
+                    required="" />
+                  <button type="submit" class="search-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                      <path d="M7.333 12.667A5.333 5.333 0 1 0 7.333 2a5.333 5.333 0 0 0 0 10.667ZM14 14l-2.9-2.9"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                  </button>
+                </form>
+              </div>
+              <hr>
+              <nav class="navbar">
+                <ul id="navbarMenu">
+                  <li><a href="#" class="active">Guide</a></li>
+                  <li><a href="#">How To</a></li>
+                  <li><a href="#">Troubleshoot</a></li>
+                  <li><a href="#">Write For Us </a></li>
+                  <li><a href="#">Internet</a></li>
+                </ul>
+              </nav>
+
+              <hr>
+
+              <div class="wg-social-links">
+                <ul>
+                  <li>
+                    <a href="#" aria-label="facebook">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 27 28" fill="none">
+                        <path
+                          d="m16.48 15.002.384-2.508h-2.406v-1.627c0-.686.336-1.355 1.414-1.355h1.094V7.377s-.993-.17-1.942-.17c-1.981 0-3.277 1.202-3.277 3.376v1.911H9.544v2.508h2.203v6.062h2.711v-6.062h2.022Z">
+                        </path>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" aria-label="instagram">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 27 27" fill="none">
+                        <g clip-path="url(#clip0_1126_8312)">
+                          <path
+                            d="M13.3748 10.0236C11.6536 10.0236 10.2652 11.412 10.2652 13.1332C10.2652 14.8545 11.6536 16.2429 13.3748 16.2429C15.0961 16.2429 16.4845 14.8545 16.4845 13.1332C16.4845 11.412 15.0961 10.0236 13.3748 10.0236ZM13.3748 15.1549C12.2625 15.1549 11.3531 14.2483 11.3531 13.1332C11.3531 12.0182 12.2598 11.1115 13.3748 11.1115C14.4899 11.1115 15.3965 12.0182 15.3965 13.1332C15.3965 14.2483 14.4872 15.1549 13.3748 15.1549ZM17.337 9.89637C17.337 10.2996 17.0123 10.6217 16.6117 10.6217C16.2085 10.6217 15.8864 10.2969 15.8864 9.89637C15.8864 9.49582 16.2112 9.17105 16.6117 9.17105C17.0123 9.17105 17.337 9.49582 17.337 9.89637ZM19.3966 10.6325C19.3506 9.66091 19.1287 8.80027 18.4169 8.09119C17.7078 7.38211 16.8472 7.16019 15.8756 7.11147C14.8742 7.05464 11.8728 7.05464 10.8714 7.11147C9.90251 7.15748 9.04187 7.37941 8.33009 8.08849C7.6183 8.79757 7.39908 9.65821 7.35037 10.6298C7.29353 11.6312 7.29353 14.6326 7.35037 15.634C7.39637 16.6056 7.6183 17.4662 8.33009 18.1753C9.04187 18.8844 9.89981 19.1063 10.8714 19.155C11.8728 19.2118 14.8742 19.2118 15.8756 19.155C16.8472 19.109 17.7078 18.8871 18.4169 18.1753C19.126 17.4662 19.3479 16.6056 19.3966 15.634C19.4534 14.6326 19.4534 11.6339 19.3966 10.6325ZM18.1029 16.7084C17.8918 17.2389 17.4832 17.6475 16.95 17.8613C16.1516 18.178 14.2571 18.1049 13.3748 18.1049C12.4925 18.1049 10.5954 18.1753 9.79967 17.8613C9.26921 17.6502 8.86054 17.2416 8.64674 16.7084C8.33009 15.91 8.40316 14.0155 8.40316 13.1332C8.40316 12.2509 8.33279 10.3538 8.64674 9.55807C8.85784 9.02761 9.2665 8.61894 9.79967 8.40514C10.5981 8.08849 12.4925 8.16156 13.3748 8.16156C14.2571 8.16156 16.1543 8.09119 16.95 8.40514C17.4805 8.61624 17.8891 9.02491 18.1029 9.55807C18.4196 10.3565 18.3465 12.2509 18.3465 13.1332C18.3465 14.0155 18.4196 15.9127 18.1029 16.7084Z">
+                          </path>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_1126_8312">
+                            <rect width="27" height="27" fill="white"></rect>
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" aria-label="twitter">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 27 27" fill="none">
+                        <g clip-path="url(#clip0_1142_8345)">
+                          <path
+                            d="M17.0949 7.50488H19.0061L14.8318 12.2747L19.7424 18.7661H15.8984L12.8855 14.8301L9.44211 18.7661H7.52824L11.9921 13.6634L7.28461 7.50488H11.226L13.9466 11.1025L17.0949 7.50488ZM16.4235 17.6238H17.482L10.6494 8.5877H9.51249L16.4235 17.6238Z">
+                          </path>
+                        </g>
+                        <defs>
+                          <clipPath id="clip0_1142_8345">
+                            <rect width="27" height="27" fill="white"></rect>
+                          </clipPath>
+                        </defs>
+                      </svg>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" aria-label="linkdin">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 27 28" fill="none">
+                        <path
+                          d="M10.256 19.332H7.743v-8.095h2.513v8.095Zm-1.258-9.199a1.468 1.468 0 0 1-1.03-2.499 1.456 1.456 0 0 1 2.486 1.03c0 .803-.652 1.47-1.456 1.47Zm10.666 9.2h-2.508v-3.941c0-.94-.019-2.144-1.307-2.144-1.307 0-1.507 1.02-1.507 2.076v4.008H11.83v-8.095h2.41v1.105h.036c.336-.636 1.155-1.308 2.378-1.308 2.544 0 3.012 1.676 3.012 3.852v4.446h-.003Z">
+                        </path>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+
+
+            </div>
+            <div class="backdrop fade"></div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </header>
+  <!-- header End-->
+
+  <div class="container sec-gap">
+
+    <div class="single-page mb-30">
+      <div class="feature-box mb-30">
+
+        <p id="breadcrumbs"><a href="#">WebGame</a></span> > <a href="#">Blog</a> > </span href="#">iphone</span></p>
+        <h1 class="mb-25"> OnlyFans Statistics Explained In Detail: Building A Strong Understanding </h1>
+        <hr>
+
+        <div class="auto-grid">
+          <div class="wg-timeline">
+            <span class="d-flex align-items-center">
+              <svg width="13" height="13" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.055 28.055"
+                xml:space="preserve">
+                <g stroke-width="0"></g>
+                <g stroke-linecap="round" stroke-linejoin="round"></g>
+                <path
+                  d="M14.249 1.027c-.036 0-.07.009-.104.009-.106-.003-.211-.01-.318-.009h.422zm-.164 16.274c-.019 0-.036-.003-.055-.003-.014 0-.027.003-.041.003h.096zm-5.948-5.988c.015-.003.026-.019.042-.023.941 3.405 3.377 5.953 5.852 6.007 2.254-.104 5.022-2.606 5.944-5.994.424.026.848-.474.967-1.17.123-.726-.135-1.374-.572-1.449-.028-.005-.057.013-.084.014-.127-5.603-2.789-7.579-6.141-7.664-3.457.017-6.552 2.419-6.356 7.666-.033 0-.064-.021-.096-.015-.439.075-.695.723-.572 1.449.12.724.576 1.252 1.016 1.179zm10.551 6.957-3.141 6.146-.496-3.997.775-.636h-3.595l.776.636-.497 3.997-3.137-6.146C3.917 19.005 0 21.343 0 27.027h28.055c.002-5.685-3.914-8.021-9.367-8.757z">
+                </path>
+              </svg>
+
+              Alex Smith
+            </span>
+
+            <span class="d-flex align-items-center">
+              <svg width="3" height="3" viewBox="0 0 3 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="1.5" cy="1.5" r="1.5" fill="#6c757d"></circle>
+              </svg>
+              January 21 , 2024
+            </span>
+
+
+
+
+          </div>
+          <div class="wg-timeline">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+              <path
+                d="M7.07885 0.36001C6.54818 0.556377 5.95745 1.00079 5.62703 1.4452L5.3567 1.81726H4.45557C3.37422 1.8276 2.98373 2.0033 2.28285 2.77843C1.70213 3.41921 1.45181 4.18401 1.5219 5.12451C1.57196 5.75495 1.57196 5.75495 1.2015 6.02367C0.530663 6.53009 0 7.60495 0 8.48343C0 9.36192 0.530663 10.4368 1.2015 10.9432C1.57196 11.2119 1.57196 11.2119 1.5219 11.8424C1.45181 12.7829 1.70213 13.5477 2.28285 14.1884C2.98373 14.9636 3.37422 15.1393 4.45557 15.1496H5.3567L5.62703 15.5217C6.19775 16.2968 7.08886 16.7412 8.06007 16.7412C9.03129 16.7412 9.9224 16.2968 10.4931 15.5217L10.7635 15.1496H11.6646C12.7459 15.1393 13.1364 14.9636 13.8373 14.1884C14.418 13.5477 14.6683 12.7829 14.5982 11.8424C14.5482 11.2119 14.5482 11.2119 14.9186 10.9432C15.5895 10.4368 16.1201 9.36192 16.1201 8.48343C16.1201 7.60495 15.5895 6.53009 14.9186 6.02367C14.5482 5.75495 14.5482 5.75495 14.5982 5.12451C14.6683 4.20468 14.428 3.47089 13.8573 2.80944C13.1665 2.01363 12.7559 1.8276 11.6646 1.81726H10.7635L10.4931 1.4452C9.9224 0.670065 9.03129 0.225653 8.06007 0.225653C7.72966 0.225653 7.28911 0.287664 7.07885 0.36001ZM11.5645 5.89965C11.6646 6.01333 11.7447 6.25104 11.7447 6.42674C11.7447 6.69545 11.4543 7.04685 9.55194 9.01052C7.65957 10.9639 7.31915 11.2739 7.05882 11.2739C6.80851 11.2739 6.5582 11.0776 5.56696 10.044C4.56571 9.00019 4.37547 8.75215 4.37547 8.49377C4.37547 8.07003 4.65582 7.75997 5.04631 7.75997C5.30663 7.75997 5.49687 7.90466 6.1577 8.58678C6.59825 9.04153 6.99875 9.41359 7.05882 9.41359C7.1189 9.41359 7.96996 8.57645 8.9612 7.55327C10.5232 5.94099 10.8035 5.69294 11.0738 5.69294C11.2541 5.69294 11.4543 5.77562 11.5645 5.89965Z"
+                fill="#EC1515"></path>
+            </svg>
+            Co-authored by <a href="#" class="aut-name" aria-label="author">Zayn Tindall</a>
+          </div>
+          <div class="wg-timeline">
+            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17" fill="none">
+              <path
+                d="M7.07885 0.36001C6.54818 0.556377 5.95745 1.00079 5.62703 1.4452L5.3567 1.81726H4.45557C3.37422 1.8276 2.98373 2.0033 2.28285 2.77843C1.70213 3.41921 1.45181 4.18401 1.5219 5.12451C1.57196 5.75495 1.57196 5.75495 1.2015 6.02367C0.530663 6.53009 0 7.60495 0 8.48343C0 9.36192 0.530663 10.4368 1.2015 10.9432C1.57196 11.2119 1.57196 11.2119 1.5219 11.8424C1.45181 12.7829 1.70213 13.5477 2.28285 14.1884C2.98373 14.9636 3.37422 15.1393 4.45557 15.1496H5.3567L5.62703 15.5217C6.19775 16.2968 7.08886 16.7412 8.06007 16.7412C9.03129 16.7412 9.9224 16.2968 10.4931 15.5217L10.7635 15.1496H11.6646C12.7459 15.1393 13.1364 14.9636 13.8373 14.1884C14.418 13.5477 14.6683 12.7829 14.5982 11.8424C14.5482 11.2119 14.5482 11.2119 14.9186 10.9432C15.5895 10.4368 16.1201 9.36192 16.1201 8.48343C16.1201 7.60495 15.5895 6.53009 14.9186 6.02367C14.5482 5.75495 14.5482 5.75495 14.5982 5.12451C14.6683 4.20468 14.428 3.47089 13.8573 2.80944C13.1665 2.01363 12.7559 1.8276 11.6646 1.81726H10.7635L10.4931 1.4452C9.9224 0.670065 9.03129 0.225653 8.06007 0.225653C7.72966 0.225653 7.28911 0.287664 7.07885 0.36001ZM11.5645 5.89965C11.6646 6.01333 11.7447 6.25104 11.7447 6.42674C11.7447 6.69545 11.4543 7.04685 9.55194 9.01052C7.65957 10.9639 7.31915 11.2739 7.05882 11.2739C6.80851 11.2739 6.5582 11.0776 5.56696 10.044C4.56571 9.00019 4.37547 8.75215 4.37547 8.49377C4.37547 8.07003 4.65582 7.75997 5.04631 7.75997C5.30663 7.75997 5.49687 7.90466 6.1577 8.58678C6.59825 9.04153 6.99875 9.41359 7.05882 9.41359C7.1189 9.41359 7.96996 8.57645 8.9612 7.55327C10.5232 5.94099 10.8035 5.69294 11.0738 5.69294C11.2541 5.69294 11.4543 5.77562 11.5645 5.89965Z"
+                fill="#EC1515"></path>
+            </svg>
+            Fact checked by <a href="#" class="aut-name" aria-label="author">Manpreet Kaur Sandhu</a>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="row">
+        <div class="col-lg-9">
+          <div class="toc-wrap mb-30">
+            <div class="d-flex align-items-center justify-content-between">
+              <div class="toc-title">
+                Table of content
+              </div>
+              <div class="opne-close-btn"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                  viewBox="0 0 20 20" fill="none">
+                  <path d="m5 7.5 5 5 5-5" stroke="#000" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round">
+                  </path>
+                </svg></div>
+            </div>
+
+            <div class="toc">
+              <ol class="toc-list">
+                <li class="toc-list-item"><a href="#hey" class="toc-link">Why Wont My PS4 Turn On?</a></li>
+                <li class="toc-list-item"><a href="#why" class="toc-link">How To Fix a PS4 That Won't Turn On? (12
+                    Effective Solutions)</a></li>
+                <li class="toc-list-item"><a href="#get" class="toc-link">Conduct Power Insert Game Disc Insert Game
+                    Disc
+                    Insert Game Disc Cycling</a></li>
+                <li class="toc-list-item"><a href="#4" class="toc-link">Insert Game Disc Insert Game Disc Insert Game
+                    Disc</a></li>
+                <li class="toc-list-item"><a href="#5" class="toc-link">Try Another Outlet Insert Game Disc Insert Game
+                    Disc</a></li>
+                <li class="toc-list-item"><a href="#6" class="toc-link">Replace the Power Insert Game Disc Cord</a></li>
+                <li class="toc-list-item"><a href="#7" class="toc-link">Disconnect the Insert Game Disc Power Cable</a>
+                </li>
+              </ol>
+            </div>
+          </div>
+          <div class="content">
+            <p>Google Doodle has always celebrated iconic events in an intriguing and interesting manner. The
+              captivating effect of those tiny pieces of crafts is undeniable. And to take this setup one notch higher,
+              Google introduced the Google Doodle Games. In essence, Google is influencing all spheres; from being a
+              knowledge pool and a money-making platform with reviews, to having a library for casual fun.</p>
+
+            <H2 class="number">How to Stop Pop-Up Ads on Android Phones? h2</H2>
+            <H2 class="number">How to Stop Pop-Up Ads on Android Phones? h2</H2>
+            <H2 class="number">How to Stop Pop-Up Ads on Android Phones? h2</H2>
+            <H2 class="number">How to Stop Pop-Up Ads on Android Phones? h2</H2>
+            <H2 class="number">How to Stop Pop-Up Ads on Android Phones? h2</H2>
+            <p>Google Doodle has always celebrated iconic events in an intriguing and interesting manner. The
+              captivating effect of those tiny pieces of crafts is undeniable. And to take this setup one notch higher,
+              Google introduced the Google Doodle Games. In essence, Google is influencing all spheres; from being a
+              knowledge pool and a money-making platform with reviews, to having a library for casual fun.</p>
+            <img src="assets/images/big-post.jpg" alt="" class="img-fluid wp-block-image">
+
+            <H3>Say Bye to Distracting Notifications h3</H3>
+            <p>Google Doodle has always celebrated iconic events in an intriguing and interesting manner. The
+              captivating effect of those tiny pieces of crafts is undeniable. And to take this setup one notch higher,
+              Google introduced the Google Doodle Games. In essence, Google is influencing all spheres; from being a
+              knowledge pool and a money-making platform with reviews, to having a library for casual fun.</p>
+            <ul>
+              <li>Implementing robotics in agriculture has revolutionized farming practices, enhancing efficiency and
+                productivity.
+                <figure class="wp-block-image size-full"><img decoding="async" width="600" height="368"
+                    src="https://www.waybinary.com/wp-content/uploads/2023/08/Harvesting.webp" alt="Harvesting"
+                    class="wp-image-20636 img-fluid"
+                    srcset="https://www.waybinary.com/wp-content/uploads/2023/08/Harvesting.webp 600w, https://www.waybinary.com/wp-content/uploads/2023/08/Harvesting-300x184.webp 300w"
+                    sizes="(max-width: 600px) 100vw, 600px"></figure>
+              </li>
+              <li>Automated livestock management makes tasks like feeding and keeping tabs on animals, improving their
+                well-being.&nbsp;Harvesting becomes easier with robots and precision farming makes use of data for pest
+                management.&nbsp;</li>
+              <li>Challenges like expensive costs, compatibility, integration, technical problems, etc. also
+                exist.&nbsp;</li>
+              <li>Balancing <a href="https://www.statista.com/topics/2637/internet-of-things/#topicOverview"
+                  target="_blank" rel="noreferrer noopener nofollow">The term IoT stands for the Internet of Things</a>
+                to
+                implementation.&nbsp;</li>
+            </ul>
+
+            <H4>Say Bye to Distracting Notifications h4</H4>
+            <p>Google Doodle has always celebrated iconic events in an intriguing and interesting manner. The
+              captivating effect of those tiny pieces of crafts is undeniable. And to take this setup one notch higher,
+              Google introduced the Google Doodle Games. In essence, Google is influencing all spheres; from being a
+              knowledge pool and a money-making platform with reviews, to having a library for casual fun.</p>
+            <!-- Notes -->
+            <div class="wg-widget-wrap mb-30">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 66 66"
+                fill="none">
+                <g filter="url(#filter0_i_2281_102)">
+                  <circle cx="32.5" cy="33.2004" fill="white"></circle>
+                </g>
+                <circle cx="32.5" cy="33.2004" r="31.5" stroke="#EC1515" stroke-width="2"></circle>
+                <path
+                  d="M45.625 39.2942V19.6067C45.625 18.8274 44.998 18.2004 44.2188 18.2004H25C21.8945 18.2004 19.375 20.72 19.375 23.8254V42.5754C19.375 45.6809 21.8945 48.2004 25 48.2004H44.2188C44.998 48.2004 45.625 47.5735 45.625 46.7942V45.8567C45.625 45.4172 45.4199 45.0188 45.1035 44.761C44.8574 43.8586 44.8574 41.2864 45.1035 40.384C45.4199 40.1321 45.625 39.7336 45.625 39.2942ZM26.875 26.052C26.875 25.8586 27.0332 25.7004 27.2266 25.7004H39.6484C39.8418 25.7004 40 25.8586 40 26.052V27.2239C40 27.4172 39.8418 27.5754 39.6484 27.5754H27.2266C27.0332 27.5754 26.875 27.4172 26.875 27.2239V26.052ZM26.875 29.802C26.875 29.6086 27.0332 29.4504 27.2266 29.4504H39.6484C39.8418 29.4504 40 29.6086 40 29.802V30.9739C40 31.1672 39.8418 31.3254 39.6484 31.3254H27.2266C27.0332 31.3254 26.875 31.1672 26.875 30.9739V29.802ZM41.7227 44.4504H25C23.9629 44.4504 23.125 43.6125 23.125 42.5754C23.125 41.5442 23.9688 40.7004 25 40.7004H41.7227C41.6113 41.7024 41.6113 43.4485 41.7227 44.4504Z"
+                  fill="#ffffff"></path>
+                <defs>
+                  <filter id="filter0_i_2281_102" x="0" y="-1.29956" width="66" height="67" filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                      result="hardAlpha"></feColorMatrix>
+                    <feMorphology radius="1" operator="erode" in="SourceAlpha" result="effect1_innerShadow_2281_102">
+                    </feMorphology>
+                    <feOffset dx="1" dy="-2"></feOffset>
+                    <feGaussianBlur stdDeviation="2"></feGaussianBlur>
+                    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"></feComposite>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix>
+                    <feBlend mode="normal" in2="shape" result="effect1_innerShadow_2281_102"></feBlend>
+                  </filter>
+                </defs>
+              </svg>
+
+              <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+                looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution
+              </p>
+            </div>
+
+            <ol>
+              <li>Implementing robotics in agriculture has revolutionized farming practices, enhancing efficiency and
+                productivity.
+                <figure class="wp-block-image size-full"><img decoding="async" width="600" height="368"
+                    src="https://www.waybinary.com/wp-content/uploads/2023/08/Harvesting.webp" alt="Harvesting"
+                    class="wp-image-20636 img-fluid"
+                    srcset="https://www.waybinary.com/wp-content/uploads/2023/08/Harvesting.webp 600w, https://www.waybinary.com/wp-content/uploads/2023/08/Harvesting-300x184.webp 300w"
+                    sizes="(max-width: 600px) 100vw, 600px"></figure>
+              </li>
+              <li>Automated livestock <a href="https://www.statista.com/topics/2637/internet-of-things/#topicOverview"
+                  target="_blank" rel="noreferrer noopener nofollow">The term IoT stands for the Internet of Things</a>,
+                improving their
+                well-being.&nbsp;Harvesting becomes easier with robots and precision farming makes use of data for pest
+                management.&nbsp;</li>
+              <li>Challenges like expensive costs, compatibility, integration, technical problems, etc. also
+                exist.&nbsp;</li>
+              <li>Balancing the benefits and challenges is the key to implementation.&nbsp;</li>
+            </ol>
+
+            <h5>Say Bye to Distracting Notifications h5</h5>
+            <p>Google Doodle has always celebrated iconic events in an intriguing and interesting manner. The
+              captivating effect of those tiny pieces of crafts is undeniable. And to take this setup one notch higher,
+              Google introduced the Google Doodle Games. In essence, Google is influencing all spheres; from being a
+              knowledge pool and a money-making platform with reviews, to having a library for casual fun.</p>
+
+            <h6>Say Bye to Distracting Notifications h6</h6>
+            <p><a href="https://www.statista.com/topics/2637/internet-of-things/#topicOverview" target="_blank"
+                rel="noreferrer noopener nofollow">The term IoT stands for the Internet of Things</a>, which was
+              originally coined by the British technologist Kevin Ashton, who defined it as a network connecting people
+              and objects around them. Internet of Things device management is a comprehensive process that covers’
+              validation, monitoring, configuration, etc. under its umbrella. This process involves validating,
+              monitoring, configuring, equipping, and analyzing multiple Internet of Things devices from a centralized
+              location.</p>
+
+            <!-- table -->
+            <table class="wp-block-table">
+              <thead>
+                <tr>
+                  <th scope="col" class="col-4">Name of website</th>
+                  <th scope="col" class="col-8">Allinsider</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Website's type</td>
+                  <td>Thornton</td>
+                </tr>
+                <tr>
+                  <td>Movie Genres</td>
+                  <td>Thornton</td>
+                </tr>
+                <tr>
+                  <td>Use of the website</td>
+                  <td>Thornton</td>
+                </tr>
+                <tr>
+                  <td>Movie resulation</td>
+                  <td>Thornton</td>
+                </tr>
+              </tbody>
+            </table>
+
+            <!-- quote -->
+            <div class="wg-quote-wrap mb-30">
+              <svg xmlns="http://www.w3.org/2000/svg" width="52" height="38" viewBox="0 0 52 38" fill="none">
+                <path
+                  d="M11.3826 2.29771C-0.55108 7.72209 -3.01671 23.8966 6.74718 33.1674C11.1853 37.4082 13.8482 37.9014 33.2773 37.9014H51.4243V19.1626V0.423828H33.4746C17.9904 0.423828 14.8344 0.719704 11.3826 2.29771Z"
+                  fill="#EC1515"></path>
+                <path
+                  d="M22.7014 10.9728C21.6365 11.5362 21.2655 11.7492 20.6059 12.1889C19.005 13.2607 17.6515 14.5318 16.937 15.6173C16.8408 15.7754 16.7102 15.954 16.6484 16.0227C16.4904 16.1945 15.8033 17.6167 15.6384 18.0977C15.5628 18.3244 15.4529 18.6954 15.3911 18.9221C15.3361 19.1489 15.2468 19.4855 15.1987 19.6779C15.1369 19.9115 15.1094 20.5093 15.1094 21.5673C15.1094 23.0033 15.1231 23.1476 15.2674 23.5942C15.8171 25.2294 16.8545 26.4524 18.2424 27.0913C19.3554 27.5998 20.8945 27.5998 22.0144 27.0845C22.7976 26.7203 23.3335 26.2462 23.8282 25.4836C24.3985 24.5904 24.5222 24.1507 24.5222 22.9415C24.5222 21.904 24.4328 21.5055 24.0344 20.7635C23.7801 20.2825 23.7801 20.2756 23.2511 19.6985C22.674 19.0664 22.0556 18.6748 21.1281 18.3725C20.4891 18.1595 20.4822 18.1389 20.7364 17.5549C21.2517 16.3937 22.3442 15.4112 24.1924 14.4631C24.852 14.1195 24.8726 14.1058 24.7833 13.9959C24.742 13.9478 24.584 13.6592 24.4191 13.3569C24.2542 13.0546 23.9931 12.5599 23.8282 12.2576C23.6633 11.9553 23.4297 11.5156 23.3061 11.2751C23.1824 11.0415 23.0518 10.8491 23.0106 10.8491C22.9694 10.8491 22.832 10.9041 22.7014 10.9728ZM23.0175 12.9172C23.2167 13.2745 23.3816 13.5974 23.3816 13.6317C23.3885 13.673 23.1618 13.8378 22.8938 14.0027C21.3136 14.9578 20.3173 15.9403 19.8707 16.964C19.8158 17.0945 19.7265 17.2938 19.6784 17.4106C19.6303 17.5205 19.5753 17.9396 19.5547 18.3313C19.5203 19.1214 19.5341 19.1626 19.9463 19.1626C20.0769 19.1626 20.3998 19.2244 20.6677 19.3069C21.9938 19.6985 23.0587 20.7154 23.4229 21.9452C23.5671 22.4399 23.5534 23.4911 23.3954 24.0202C23.1206 24.9271 22.3717 25.7997 21.5403 26.1913C21.1487 26.3699 20.9838 26.4043 20.3517 26.4318C19.8982 26.4524 19.486 26.4318 19.2867 26.3837C17.9882 26.0607 16.7446 24.7965 16.2705 23.3193C16.085 22.7353 16.0713 22.6323 16.0781 21.5673C16.085 19.884 16.3942 18.6473 17.1843 17.177C18.0225 15.6036 19.6234 14.0096 21.6021 12.7729C22.3304 12.3126 22.5091 12.2164 22.5915 12.2439C22.6327 12.2576 22.8182 12.5599 23.0175 12.9172Z"
+                  fill="#ECECEC"></path>
+                <path
+                  d="M34.6973 11.1583C34.3676 11.3301 33.9003 11.598 33.653 11.7423C33.4125 11.8935 33.1995 12.0172 33.1789 12.0172C33.1514 12.0172 32.4025 12.5393 31.8735 12.9172C31.4132 13.2539 29.5718 15.0608 29.5718 15.1776C29.5718 15.212 29.5306 15.2807 29.4825 15.3288C29.2627 15.5624 28.871 16.1602 28.555 16.7579C28.0672 17.6717 27.9504 17.9877 27.6137 19.2039C27.5587 19.3962 27.4625 20.0558 27.4007 20.6673C27.2908 21.7048 27.2908 21.8284 27.3938 22.5842C27.6137 24.0958 28.0809 25.0508 29.1321 26.0814C30.1765 27.1188 31.3445 27.5448 32.8423 27.4486C34.1889 27.3662 35.2401 26.7753 36.044 25.6554C36.9234 24.4187 37.1227 22.4674 36.4975 21.0864C35.9134 19.7879 34.8485 18.8397 33.4331 18.3725L32.8835 18.1939L32.9385 17.9465C33.1995 16.7923 34.6149 15.4113 36.5318 14.4494C36.841 14.2913 37.0608 14.1402 37.0608 14.0783C37.0608 13.9684 37.054 13.9615 36.5318 12.979C36.3394 12.6218 36.0165 12.0034 35.8104 11.6118C35.6043 11.2133 35.405 10.8835 35.3707 10.8698C35.3294 10.856 35.0271 10.9866 34.6973 11.1583ZM35.1027 12.4775C35.1783 12.6218 35.3432 12.9172 35.46 13.1371C35.5837 13.3638 35.6867 13.5768 35.6867 13.6249C35.6867 13.6661 35.5081 13.8104 35.2951 13.9409C32.911 15.3632 31.8392 16.8472 31.8392 18.7229C31.8392 19.1145 31.8941 19.1626 32.3682 19.1626C32.4919 19.1626 32.6568 19.1901 32.7461 19.2245C32.8354 19.2588 33.0759 19.3413 33.282 19.4031C34.024 19.6504 34.766 20.2344 35.2264 20.9353C35.5905 21.4918 35.7142 21.7941 35.8241 22.4399C35.9615 23.2232 35.7554 24.2057 35.3088 24.8996C34.9584 25.4424 34.4775 25.8753 33.9072 26.157L33.385 26.4112H32.4575C31.5575 26.4112 31.5162 26.4043 31.0628 26.1913C30.4169 25.8821 29.7986 25.3806 29.2695 24.7279C29.1046 24.5217 28.7199 23.766 28.5825 23.3537C28.2802 22.488 28.3076 20.6192 28.6443 19.3275C28.7405 18.9496 28.8504 18.5924 28.8848 18.5305C28.926 18.4618 28.9535 18.3725 28.9535 18.3313C28.9535 18.0633 29.9016 16.3938 30.4238 15.7617C30.7948 15.3013 31.7224 14.3738 32.1483 14.044C32.3407 13.8928 32.5056 13.7486 32.5262 13.7279C32.6842 13.5493 34.766 12.2301 34.8966 12.2233C34.9378 12.2233 35.0271 12.3401 35.1027 12.4775Z"
+                  fill="#ECECEC"></path>
+              </svg>
+              <p>Google Doodle has always celebrated iconic events in an intriguing and interesting manner. The
+                captivating effect of those tiny pieces of crafts is undeniable. And to take this setup one notch
+                higher,
+                Google introduced the Google Doodle Games. In essence, Google is influencing all spheres.</p>
+            </div>
+
+            <p><a href="https://www.statista.com/topics/2637/internet-of-things/#topicOverview" target="_blank"
+                rel="noreferrer noopener nofollow">The term IoT stands for the Internet of Things</a>, which was
+              originally coined by the British technologist Kevin Ashton, who defined it as a network connecting people
+              and objects around them. Internet of Things device management is a comprehensive process that covers’
+              validation, monitoring, configuration, etc. under its umbrella. This process involves validating,
+              monitoring, configuring, equipping, and analyzing multiple Internet of Things devices from a centralized
+              location.</p>
+
+
+
+            <!-- pros and cons -->
+
+            <div class="wg-pros-cons-wrap">
+              <div class="pros-cons pros mb-30">
+                <div class="h4">Pros</div>
+                <ul>
+                  <li>Excellent Battery <a href="#">Life Excellent</a> Battery Life Excellent Battery </li>
+                  <li>Apt Display Quality</li>
+                  <li>Perfect Pixel Density</li>
+                  <li>Superb video conferencing</li>
+                </ul>
+              </div>
+              <div class="pros-cons cons mb-30">
+                <div class="h4">Cons</div>
+                <ul>
+                  <li>Inadequate Storage Inadequate Storage </li>
+                  <li>Heavy in Weight</li>
+                  <li>Graphical processing is worst</li>
+                  <li>Weak Processor</li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- Notes -->
+            <div class="wg-widget-wrap mb-30">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 66 66"
+                fill="none">
+                <g filter="url(#filter0_i_2281_102)">
+                  <circle cx="32.5" cy="33.2004" fill="white"></circle>
+                </g>
+                <circle cx="32.5" cy="33.2004" r="31.5" stroke="#EC1515" stroke-width="2"></circle>
+                <path
+                  d="M45.625 39.2942V19.6067C45.625 18.8274 44.998 18.2004 44.2188 18.2004H25C21.8945 18.2004 19.375 20.72 19.375 23.8254V42.5754C19.375 45.6809 21.8945 48.2004 25 48.2004H44.2188C44.998 48.2004 45.625 47.5735 45.625 46.7942V45.8567C45.625 45.4172 45.4199 45.0188 45.1035 44.761C44.8574 43.8586 44.8574 41.2864 45.1035 40.384C45.4199 40.1321 45.625 39.7336 45.625 39.2942ZM26.875 26.052C26.875 25.8586 27.0332 25.7004 27.2266 25.7004H39.6484C39.8418 25.7004 40 25.8586 40 26.052V27.2239C40 27.4172 39.8418 27.5754 39.6484 27.5754H27.2266C27.0332 27.5754 26.875 27.4172 26.875 27.2239V26.052ZM26.875 29.802C26.875 29.6086 27.0332 29.4504 27.2266 29.4504H39.6484C39.8418 29.4504 40 29.6086 40 29.802V30.9739C40 31.1672 39.8418 31.3254 39.6484 31.3254H27.2266C27.0332 31.3254 26.875 31.1672 26.875 30.9739V29.802ZM41.7227 44.4504H25C23.9629 44.4504 23.125 43.6125 23.125 42.5754C23.125 41.5442 23.9688 40.7004 25 40.7004H41.7227C41.6113 41.7024 41.6113 43.4485 41.7227 44.4504Z"
+                  fill="#ffffff"></path>
+                <defs>
+                  <filter id="filter0_i_2281_102" x="0" y="-1.29956" width="66" height="67" filterUnits="userSpaceOnUse"
+                    color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                      result="hardAlpha"></feColorMatrix>
+                    <feMorphology radius="1" operator="erode" in="SourceAlpha" result="effect1_innerShadow_2281_102">
+                    </feMorphology>
+                    <feOffset dx="1" dy="-2"></feOffset>
+                    <feGaussianBlur stdDeviation="2"></feGaussianBlur>
+                    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"></feComposite>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix>
+                    <feBlend mode="normal" in2="shape" result="effect1_innerShadow_2281_102"></feBlend>
+                  </filter>
+                </defs>
+              </svg>
+
+              <p>It is a long established fact that a reader will be distracted by the readable content of a page when
+                looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution
+              </p>
+            </div>
+
+            <!-- Sources -->
+            <div class="wg-widget-wrap mb-30">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 66 66"
+                fill="none">
+                <g filter="url(#filter0_i_2281_119)">
+                  <circle cx="33.4062" cy="33.4492" fill="white"></circle>
+                </g>
+                <circle cx="33.4062" cy="33.4492" r="31" stroke="#EC1515" stroke-width="3"></circle>
+                <path
+                  d="M41.3756 27.8242H34.6139L37.11 20.2188C37.3444 19.3281 36.6705 18.4492 35.7506 18.4492H27.3131C26.61 18.4492 26.0123 18.9707 25.9186 19.668L24.0436 33.7305C23.9323 34.5742 24.5885 35.3242 25.4381 35.3242H32.3932L29.692 46.7207C29.4811 47.6113 30.1608 48.4492 31.0573 48.4492C31.5494 48.4492 32.0182 48.1914 32.276 47.7461L42.5885 29.9336C43.1334 29.002 42.4596 27.8242 41.3756 27.8242Z"
+                  fill="#ffffff"></path>
+                <defs>
+                  <filter id="filter0_i_2281_119" x="0.90625" y="-1.05078" width="66" height="67"
+                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                    <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"></feBlend>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                      result="hardAlpha"></feColorMatrix>
+                    <feMorphology radius="1" operator="erode" in="SourceAlpha" result="effect1_innerShadow_2281_119">
+                    </feMorphology>
+                    <feOffset dx="1" dy="-2"></feOffset>
+                    <feGaussianBlur stdDeviation="2"></feGaussianBlur>
+                    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"></feComposite>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix>
+                    <feBlend mode="normal" in2="shape" result="effect1_innerShadow_2281_119"></feBlend>
+                  </filter>
+                </defs>
+              </svg>
+              <div class="head h3">Sources</div>
+              <ul>
+                <li>OnlyFans support maintaining the privacy and safety of both users and creators. Hence, it doesn’t
+                  have any public search features.</li>
+                <li>OnlyFans support maintaining</li>
+                <li>OnlyFans support maintaining</li>
+              </ul>
+              <p>
+                <a href="#">OnlyFans support </a>OnlyFans support maintainingOnlyFans support maintainingOnlyFans
+                support maintainingOnlyFans support maintainingOnlyFans support maintainingOnlyFans support maintaining
+              </p>
+              <ol>
+                <li>OnlyFans support maintaining the privacy and safety of both users and creators. Hence, it doesn’t
+                  have any public search features.</li>
+                <li>OnlyFans support maintaining</li>
+              </ol>
+            </div>
+
+            <!-- Also read -->
+            <div class="wg-widget-wrap mb-30">
+              <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 74 74"
+                fill="none">
+                <g filter="url(#filter0_di_2281_127)">
+                  <circle cx="36.7852" cy="36.7373" fill="white"></circle>
+                  <circle cx="36.7852" cy="36.7373" stroke="#EC1515" stroke-width="3"></circle>
+                </g>
+                <path
+                  d="M42.4101 27.3623C42.4101 24.2557 39.8918 21.7373 36.7851 21.7373C33.6785 21.7373 31.1601 24.2557 31.1601 27.3623C31.1601 30.4689 33.6785 32.9873 36.7851 32.9873C39.8918 32.9873 42.4101 30.4689 42.4101 27.3623ZM35.472 35.8642C31.9957 33.7361 26.3648 33.1513 23.5312 32.9902C22.5791 32.9363 21.7852 33.6617 21.7852 34.5775V47.6322C21.7852 48.4718 22.4643 49.172 23.3373 49.2171C25.8955 49.3513 31.0711 49.8429 34.6482 51.6446C35.1972 51.9212 35.8482 51.5445 35.8482 50.9491V36.5357C35.8476 36.2621 35.7123 36.0113 35.472 35.8642ZM50.039 32.9902C47.206 33.1508 41.5746 33.7361 38.0988 35.8642C37.8586 36.0113 37.7232 36.272 37.7232 36.5457V50.9474C37.7232 51.5445 38.3759 51.9218 38.9267 51.6446C42.5033 49.8447 47.6759 49.3531 50.2335 49.2189C51.1066 49.1732 51.7857 48.473 51.7857 47.6333V34.5775C51.7851 33.6617 50.9911 32.9363 50.039 32.9902Z"
+                  fill="#ffffff"></path>
+                <defs>
+                  <filter id="filter0_di_2281_127" x="0.285156" y="0.237305" width="73" height="73"
+                    filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"></feFlood>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                      result="hardAlpha"></feColorMatrix>
+                    <feOffset></feOffset>
+                    <feGaussianBlur stdDeviation="2"></feGaussianBlur>
+                    <feComposite in2="hardAlpha" operator="out"></feComposite>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"></feColorMatrix>
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2281_127"></feBlend>
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2281_127" result="shape">
+                    </feBlend>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                      result="hardAlpha"></feColorMatrix>
+                    <feMorphology radius="1" operator="erode" in="SourceAlpha" result="effect2_innerShadow_2281_127">
+                    </feMorphology>
+                    <feOffset dx="1" dy="-2"></feOffset>
+                    <feGaussianBlur stdDeviation="2"></feGaussianBlur>
+                    <feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"></feComposite>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"></feColorMatrix>
+                    <feBlend mode="normal" in2="shape" result="effect2_innerShadow_2281_127"></feBlend>
+                  </filter>
+                </defs>
+              </svg>
+              <div class="head h3 mb-20">Also Read</div>
+              <div class="wg-card mb-10">
+                <div class="wg-card-content card-p">
+                  <a href="#" class="truncate-2 wg-title mb-10">
+                    OnlyFans Statistics Explained In Detail: Building A Strong Understanding
+                  </a>
+
+                  <div class="wg-timeline">
+                    <span class="d-flex align-items-center">
+                      <svg width="13" height="13" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.055 28.055"
+                        xml:space="preserve">
+                        <g stroke-width="0"></g>
+                        <g stroke-linecap="round" stroke-linejoin="round"></g>
+                        <path
+                          d="M14.249 1.027c-.036 0-.07.009-.104.009-.106-.003-.211-.01-.318-.009h.422zm-.164 16.274c-.019 0-.036-.003-.055-.003-.014 0-.027.003-.041.003h.096zm-5.948-5.988c.015-.003.026-.019.042-.023.941 3.405 3.377 5.953 5.852 6.007 2.254-.104 5.022-2.606 5.944-5.994.424.026.848-.474.967-1.17.123-.726-.135-1.374-.572-1.449-.028-.005-.057.013-.084.014-.127-5.603-2.789-7.579-6.141-7.664-3.457.017-6.552 2.419-6.356 7.666-.033 0-.064-.021-.096-.015-.439.075-.695.723-.572 1.449.12.724.576 1.252 1.016 1.179zm10.551 6.957-3.141 6.146-.496-3.997.775-.636h-3.595l.776.636-.497 3.997-3.137-6.146C3.917 19.005 0 21.343 0 27.027h28.055c.002-5.685-3.914-8.021-9.367-8.757z">
+                        </path>
+                      </svg>
+
+                      Alex Smith
+                    </span>
+
+                    <span class="d-flex align-items-center">
+                      <svg width="3" height="3" viewBox="0 0 3 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="1.5" cy="1.5" r="1.5" fill="#6c757d"></circle>
+                      </svg>
+                      January 21 , 2024
+                    </span>
+
+
+
+
+                  </div>
+                </div>
+              </div>
+              <div class="wg-card mb-10">
+                <div class="wg-card-content card-p">
+                  <a href="#" class="truncate-2 wg-title mb-10">
+                    OnlyFans Statistics Explained In Detail: Building A Strong Understanding
+                  </a>
+
+                  <div class="wg-timeline">
+                    <span class="d-flex align-items-center">
+                      <svg width="13" height="13" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.055 28.055"
+                        xml:space="preserve">
+                        <g stroke-width="0"></g>
+                        <g stroke-linecap="round" stroke-linejoin="round"></g>
+                        <path
+                          d="M14.249 1.027c-.036 0-.07.009-.104.009-.106-.003-.211-.01-.318-.009h.422zm-.164 16.274c-.019 0-.036-.003-.055-.003-.014 0-.027.003-.041.003h.096zm-5.948-5.988c.015-.003.026-.019.042-.023.941 3.405 3.377 5.953 5.852 6.007 2.254-.104 5.022-2.606 5.944-5.994.424.026.848-.474.967-1.17.123-.726-.135-1.374-.572-1.449-.028-.005-.057.013-.084.014-.127-5.603-2.789-7.579-6.141-7.664-3.457.017-6.552 2.419-6.356 7.666-.033 0-.064-.021-.096-.015-.439.075-.695.723-.572 1.449.12.724.576 1.252 1.016 1.179zm10.551 6.957-3.141 6.146-.496-3.997.775-.636h-3.595l.776.636-.497 3.997-3.137-6.146C3.917 19.005 0 21.343 0 27.027h28.055c.002-5.685-3.914-8.021-9.367-8.757z">
+                        </path>
+                      </svg>
+
+                      Alex Smith
+                    </span>
+
+                    <span class="d-flex align-items-center">
+                      <svg width="3" height="3" viewBox="0 0 3 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="1.5" cy="1.5" r="1.5" fill="#6c757d"></circle>
+                      </svg>
+                      January 21 , 2024
+                    </span>
+
+
+
+
+                  </div>
+                </div>
+              </div>
+              <div class="wg-card mb-10">
+                <div class="wg-card-content card-p">
+                  <a href="#" class="truncate-2 wg-title mb-10">
+                    OnlyFans Statistics Explained In Detail: Building A Strong Understanding
+                  </a>
+
+                  <div class="wg-timeline">
+                    <span class="d-flex align-items-center">
+                      <svg width="13" height="13" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.055 28.055"
+                        xml:space="preserve">
+                        <g stroke-width="0"></g>
+                        <g stroke-linecap="round" stroke-linejoin="round"></g>
+                        <path
+                          d="M14.249 1.027c-.036 0-.07.009-.104.009-.106-.003-.211-.01-.318-.009h.422zm-.164 16.274c-.019 0-.036-.003-.055-.003-.014 0-.027.003-.041.003h.096zm-5.948-5.988c.015-.003.026-.019.042-.023.941 3.405 3.377 5.953 5.852 6.007 2.254-.104 5.022-2.606 5.944-5.994.424.026.848-.474.967-1.17.123-.726-.135-1.374-.572-1.449-.028-.005-.057.013-.084.014-.127-5.603-2.789-7.579-6.141-7.664-3.457.017-6.552 2.419-6.356 7.666-.033 0-.064-.021-.096-.015-.439.075-.695.723-.572 1.449.12.724.576 1.252 1.016 1.179zm10.551 6.957-3.141 6.146-.496-3.997.775-.636h-3.595l.776.636-.497 3.997-3.137-6.146C3.917 19.005 0 21.343 0 27.027h28.055c.002-5.685-3.914-8.021-9.367-8.757z">
+                        </path>
+                      </svg>
+
+                      Alex Smith
+                    </span>
+
+                    <span class="d-flex align-items-center">
+                      <svg width="3" height="3" viewBox="0 0 3 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="1.5" cy="1.5" r="1.5" fill="#6c757d"></circle>
+                      </svg>
+                      January 21 , 2024
+                    </span>
+
+
+
+
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+
+
+            <!-- Accoridon -->
+            <h2>FAQ's</h2>
+            <div class="wg-accordion-wrap mb-30">
+              <details>
+                <summary class="radius">What is HTML?</summary>
+                <div class="accordion-content">
+                  <p>
+                    <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse
+                    plugin adds the
+                    appropriate classes that we use to style each element. These classes control the overall appearance,
+                    as well as the
+                    <a href="#">showing and hiding via CSS transitions</a>. You can modify any of this with custom CSS
+                    or overriding our
+                    default
+                    variables. It's also worth noting that just about any HTML can go within the
+                    <code>.accordion-body</code>, though the
+                    transition does limit overflow.
+                  </p>
+                </div>
+              </details>
+              <details>
+                <summary class="radius">What is CSS?</summary>
+                <div class="accordion-content">
+                  <p> To fix network errors:</p>
+                  <ul>
+                    <li>Unplug your <strong>modem </strong>or disconnect the internet connection.</li>
+                    <li>Turn off your <strong>device </strong>and restart after 30 seconds.</li>
+                    <li>Connect to the <strong>internet </strong>and open the app again.</li>
+                  </ul>
+                </div>
+              </details>
+              <details>
+                <summary class="radius open">What is JavaScript?</summary>
+                <div class="accordion-content">
+                  <p>JavaScript (JS) is a lightweight, interpreted, or just-in-time compiled programming
+                    language with first-class functions.</p>
+                  <ol>
+                    <li>Unplug your <strong>modem </strong>or disconnect the internet connection.</li>
+                    <li>Turn off your <strong>device </strong>and restart after 30 seconds.</li>
+                    <li>Connect to the <strong>internet </strong>and open the app again.</li>
+                  </ol>
+                </div>
+              </details>
+            </div>
+
+
+          </div> <!--End Single Content  -->
+        </div>
+        <div class="col-lg-3">
+          <div class="sidebar">
+
+            <div class="wg-auth-card mb-30 text-center">
+              <div class="img-placeholder">
+                <img src="https://getassist.net/wp-content/uploads/2023/12/gaurav-rathore-NS.webp" class="img-fluid"
+                  alt="">
+              </div>
+              <div class="auth-content">
+                <a href="#" class="aut-name">Zayn Tindall</a>
+                <p class="auth-exertise">Tech Writer and Gadget Enthusiast</p>
+                <a href="#" class="wg-btn">
+                  Explore
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="15" viewBox="0 0 14 15" fill="none">
+                    <path
+                      d="M7.0082 8.39883L3.28945 12.1176C3.03242 12.3746 2.6168 12.3746 2.3625 12.1176L1.74453 11.4996C1.4875 11.2426 1.4875 10.827 1.74453 10.5727L4.38047 7.93672L1.74453 5.30078C1.4875 5.04375 1.4875 4.62812 1.74453 4.37383L2.35977 3.75039C2.6168 3.49336 3.03242 3.49336 3.28672 3.75039L7.00547 7.46914C7.26523 7.72617 7.26523 8.1418 7.0082 8.39883ZM12.2582 7.46914L8.53945 3.75039C8.28242 3.49336 7.8668 3.49336 7.6125 3.75039L6.99453 4.36836C6.7375 4.62539 6.7375 5.04102 6.99453 5.29531L9.63047 7.93125L6.99453 10.5672C6.7375 10.8242 6.7375 11.2398 6.99453 11.4941L7.6125 12.1121C7.86953 12.3691 8.28516 12.3691 8.53945 12.1121L12.2582 8.39336C12.5152 8.1418 12.5152 7.72617 12.2582 7.46914Z"
+                      fill="#EC1515"></path>
+                  </svg>
+
+                </a>
+              </div>
+            </div>
+
+            <div class="wg-social-links">
+              <p>Share Post : </p>
+              <ul>
+                <li>
+                  <a href="#" aria-label="facebook">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 27 28" fill="none">
+                      <path
+                        d="m16.48 15.002.384-2.508h-2.406v-1.627c0-.686.336-1.355 1.414-1.355h1.094V7.377s-.993-.17-1.942-.17c-1.981 0-3.277 1.202-3.277 3.376v1.911H9.544v2.508h2.203v6.062h2.711v-6.062h2.022Z">
+                      </path>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" aria-label="instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 27 27" fill="none">
+                      <g clip-path="url(#clip0_1126_8312)">
+                        <path
+                          d="M13.3748 10.0236C11.6536 10.0236 10.2652 11.412 10.2652 13.1332C10.2652 14.8545 11.6536 16.2429 13.3748 16.2429C15.0961 16.2429 16.4845 14.8545 16.4845 13.1332C16.4845 11.412 15.0961 10.0236 13.3748 10.0236ZM13.3748 15.1549C12.2625 15.1549 11.3531 14.2483 11.3531 13.1332C11.3531 12.0182 12.2598 11.1115 13.3748 11.1115C14.4899 11.1115 15.3965 12.0182 15.3965 13.1332C15.3965 14.2483 14.4872 15.1549 13.3748 15.1549ZM17.337 9.89637C17.337 10.2996 17.0123 10.6217 16.6117 10.6217C16.2085 10.6217 15.8864 10.2969 15.8864 9.89637C15.8864 9.49582 16.2112 9.17105 16.6117 9.17105C17.0123 9.17105 17.337 9.49582 17.337 9.89637ZM19.3966 10.6325C19.3506 9.66091 19.1287 8.80027 18.4169 8.09119C17.7078 7.38211 16.8472 7.16019 15.8756 7.11147C14.8742 7.05464 11.8728 7.05464 10.8714 7.11147C9.90251 7.15748 9.04187 7.37941 8.33009 8.08849C7.6183 8.79757 7.39908 9.65821 7.35037 10.6298C7.29353 11.6312 7.29353 14.6326 7.35037 15.634C7.39637 16.6056 7.6183 17.4662 8.33009 18.1753C9.04187 18.8844 9.89981 19.1063 10.8714 19.155C11.8728 19.2118 14.8742 19.2118 15.8756 19.155C16.8472 19.109 17.7078 18.8871 18.4169 18.1753C19.126 17.4662 19.3479 16.6056 19.3966 15.634C19.4534 14.6326 19.4534 11.6339 19.3966 10.6325ZM18.1029 16.7084C17.8918 17.2389 17.4832 17.6475 16.95 17.8613C16.1516 18.178 14.2571 18.1049 13.3748 18.1049C12.4925 18.1049 10.5954 18.1753 9.79967 17.8613C9.26921 17.6502 8.86054 17.2416 8.64674 16.7084C8.33009 15.91 8.40316 14.0155 8.40316 13.1332C8.40316 12.2509 8.33279 10.3538 8.64674 9.55807C8.85784 9.02761 9.2665 8.61894 9.79967 8.40514C10.5981 8.08849 12.4925 8.16156 13.3748 8.16156C14.2571 8.16156 16.1543 8.09119 16.95 8.40514C17.4805 8.61624 17.8891 9.02491 18.1029 9.55807C18.4196 10.3565 18.3465 12.2509 18.3465 13.1332C18.3465 14.0155 18.4196 15.9127 18.1029 16.7084Z">
+                        </path>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1126_8312">
+                          <rect width="27" height="27" fill="white"></rect>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" aria-label="twitter">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 27 27" fill="none">
+                      <g clip-path="url(#clip0_1142_8345)">
+                        <path
+                          d="M17.0949 7.50488H19.0061L14.8318 12.2747L19.7424 18.7661H15.8984L12.8855 14.8301L9.44211 18.7661H7.52824L11.9921 13.6634L7.28461 7.50488H11.226L13.9466 11.1025L17.0949 7.50488ZM16.4235 17.6238H17.482L10.6494 8.5877H9.51249L16.4235 17.6238Z">
+                        </path>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1142_8345">
+                          <rect width="27" height="27" fill="white"></rect>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" aria-label="linkdin">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 27 28" fill="none">
+                      <path
+                        d="M10.256 19.332H7.743v-8.095h2.513v8.095Zm-1.258-9.199a1.468 1.468 0 0 1-1.03-2.499 1.456 1.456 0 0 1 2.486 1.03c0 .803-.652 1.47-1.456 1.47Zm10.666 9.2h-2.508v-3.941c0-.94-.019-2.144-1.307-2.144-1.307 0-1.507 1.02-1.507 2.076v4.008H11.83v-8.095h2.41v1.105h.036c.336-.636 1.155-1.308 2.378-1.308 2.544 0 3.012 1.676 3.012 3.852v4.446h-.003Z">
+                      </path>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Related Post -->
+    <div class="sec-title d-flex align-items-center mb-25">
+      <div class="h2">Related Post</div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-3 col-md-6">
+        <a href="#" class="wg-card-link">
+          <div class="wg-card">
+            <div class="img-placeholder">
+              <img src="https://www.waybinary.com/wp-content/uploads/2023/02/gain-instagram-followers.webp"
+                class="img-fluid" alt="">
+            </div>
+            <div class="wg-card-content card-p">
+              <span class="cat-name mb-10">Internet</span>
+              <div class="truncate-2 wg-title mb-10">
+                OnlyFans Statistics Explained In Detail: Building A Strong Understanding
+              </div>
+
+              <div class="wg-timeline justify-content-between">
+                <span class="d-flex align-items-center">
+                  <svg width="15" height="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.055 28.055"
+                    xml:space="preserve">
+                    <g stroke-width="0" />
+                    <g stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M14.249 1.027c-.036 0-.07.009-.104.009-.106-.003-.211-.01-.318-.009h.422zm-.164 16.274c-.019 0-.036-.003-.055-.003-.014 0-.027.003-.041.003h.096zm-5.948-5.988c.015-.003.026-.019.042-.023.941 3.405 3.377 5.953 5.852 6.007 2.254-.104 5.022-2.606 5.944-5.994.424.026.848-.474.967-1.17.123-.726-.135-1.374-.572-1.449-.028-.005-.057.013-.084.014-.127-5.603-2.789-7.579-6.141-7.664-3.457.017-6.552 2.419-6.356 7.666-.033 0-.064-.021-.096-.015-.439.075-.695.723-.572 1.449.12.724.576 1.252 1.016 1.179zm10.551 6.957-3.141 6.146-.496-3.997.775-.636h-3.595l.776.636-.497 3.997-3.137-6.146C3.917 19.005 0 21.343 0 27.027h28.055c.002-5.685-3.914-8.021-9.367-8.757z" />
+                  </svg>
+
+                  Alex Smith
+                </span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <a href="#" class="wg-card-link">
+          <div class="wg-card">
+            <div class="img-placeholder">
+              <img src="https://www.waybinary.com/wp-content/uploads/2023/02/gain-instagram-followers.webp"
+                class="img-fluid" alt="">
+            </div>
+            <div class="wg-card-content card-p">
+              <span class="cat-name mb-10">Internet</span>
+              <div class="truncate-2 wg-title mb-10">
+                OnlyFans Statistics Explained In Detail: Building A Strong Understanding
+              </div>
+
+              <div class="wg-timeline justify-content-between">
+                <span class="d-flex align-items-center">
+                  <svg width="15" height="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.055 28.055"
+                    xml:space="preserve">
+                    <g stroke-width="0" />
+                    <g stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M14.249 1.027c-.036 0-.07.009-.104.009-.106-.003-.211-.01-.318-.009h.422zm-.164 16.274c-.019 0-.036-.003-.055-.003-.014 0-.027.003-.041.003h.096zm-5.948-5.988c.015-.003.026-.019.042-.023.941 3.405 3.377 5.953 5.852 6.007 2.254-.104 5.022-2.606 5.944-5.994.424.026.848-.474.967-1.17.123-.726-.135-1.374-.572-1.449-.028-.005-.057.013-.084.014-.127-5.603-2.789-7.579-6.141-7.664-3.457.017-6.552 2.419-6.356 7.666-.033 0-.064-.021-.096-.015-.439.075-.695.723-.572 1.449.12.724.576 1.252 1.016 1.179zm10.551 6.957-3.141 6.146-.496-3.997.775-.636h-3.595l.776.636-.497 3.997-3.137-6.146C3.917 19.005 0 21.343 0 27.027h28.055c.002-5.685-3.914-8.021-9.367-8.757z" />
+                  </svg>
+
+                  Alex Smith
+                </span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <a href="#" class="wg-card-link">
+          <div class="wg-card">
+            <div class="img-placeholder">
+              <img src="https://www.waybinary.com/wp-content/uploads/2023/02/gain-instagram-followers.webp"
+                class="img-fluid" alt="">
+            </div>
+            <div class="wg-card-content card-p">
+              <span class="cat-name mb-10">Internet</span>
+              <div class="truncate-2 wg-title mb-10">
+                OnlyFans Statistics Explained In Detail: Building A Strong Understanding
+              </div>
+
+              <div class="wg-timeline justify-content-between">
+                <span class="d-flex align-items-center">
+                  <svg width="15" height="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.055 28.055"
+                    xml:space="preserve">
+                    <g stroke-width="0" />
+                    <g stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M14.249 1.027c-.036 0-.07.009-.104.009-.106-.003-.211-.01-.318-.009h.422zm-.164 16.274c-.019 0-.036-.003-.055-.003-.014 0-.027.003-.041.003h.096zm-5.948-5.988c.015-.003.026-.019.042-.023.941 3.405 3.377 5.953 5.852 6.007 2.254-.104 5.022-2.606 5.944-5.994.424.026.848-.474.967-1.17.123-.726-.135-1.374-.572-1.449-.028-.005-.057.013-.084.014-.127-5.603-2.789-7.579-6.141-7.664-3.457.017-6.552 2.419-6.356 7.666-.033 0-.064-.021-.096-.015-.439.075-.695.723-.572 1.449.12.724.576 1.252 1.016 1.179zm10.551 6.957-3.141 6.146-.496-3.997.775-.636h-3.595l.776.636-.497 3.997-3.137-6.146C3.917 19.005 0 21.343 0 27.027h28.055c.002-5.685-3.914-8.021-9.367-8.757z" />
+                  </svg>
+
+                  Alex Smith
+                </span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-6">
+        <a href="#" class="wg-card-link">
+          <div class="wg-card">
+            <div class="img-placeholder">
+              <img src="https://www.waybinary.com/wp-content/uploads/2023/02/gain-instagram-followers.webp"
+                class="img-fluid" alt="">
+            </div>
+            <div class="wg-card-content card-p">
+              <span class="cat-name mb-10">Internet</span>
+              <div class="truncate-2 wg-title mb-10">
+                OnlyFans Statistics Explained In Detail: Building A Strong Understanding
+              </div>
+
+              <div class="wg-timeline justify-content-between">
+                <span class="d-flex align-items-center">
+                  <svg width="15" height="15" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28.055 28.055"
+                    xml:space="preserve">
+                    <g stroke-width="0" />
+                    <g stroke-linecap="round" stroke-linejoin="round" />
+                    <path
+                      d="M14.249 1.027c-.036 0-.07.009-.104.009-.106-.003-.211-.01-.318-.009h.422zm-.164 16.274c-.019 0-.036-.003-.055-.003-.014 0-.027.003-.041.003h.096zm-5.948-5.988c.015-.003.026-.019.042-.023.941 3.405 3.377 5.953 5.852 6.007 2.254-.104 5.022-2.606 5.944-5.994.424.026.848-.474.967-1.17.123-.726-.135-1.374-.572-1.449-.028-.005-.057.013-.084.014-.127-5.603-2.789-7.579-6.141-7.664-3.457.017-6.552 2.419-6.356 7.666-.033 0-.064-.021-.096-.015-.439.075-.695.723-.572 1.449.12.724.576 1.252 1.016 1.179zm10.551 6.957-3.141 6.146-.496-3.997.775-.636h-3.595l.776.636-.497 3.997-3.137-6.146C3.917 19.005 0 21.343 0 27.027h28.055c.002-5.685-3.914-8.021-9.367-8.757z" />
+                  </svg>
+
+                  Alex Smith
+                </span>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+    </div>
+
+  </div>
+
+
+  <!-- Footer Start-->
+  <footer>
+    <div class="container">
+      <div class="row mb-20 align-content-center">
+        <div class="col-lg-4 col-md-12">
+          <div class="foot-logo">
+            <a class="logo-img" href="index.html">
+              <img src="assets/images/logo.svg" alt="logo" class="img-fluid" />
+            </a>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error unde, quidem dolor similique
+              laboriosam voluptate voluptatum ipsa </p>
+            <div class="wg-social-links">
+              <ul>
+                <li>
+                  <a href="#" aria-label="facebook">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 27 28" fill="none">
+                      <path
+                        d="m16.48 15.002.384-2.508h-2.406v-1.627c0-.686.336-1.355 1.414-1.355h1.094V7.377s-.993-.17-1.942-.17c-1.981 0-3.277 1.202-3.277 3.376v1.911H9.544v2.508h2.203v6.062h2.711v-6.062h2.022Z">
+                      </path>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" aria-label="instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 27 27" fill="none">
+                      <g clip-path="url(#clip0_1126_8312)">
+                        <path
+                          d="M13.3748 10.0236C11.6536 10.0236 10.2652 11.412 10.2652 13.1332C10.2652 14.8545 11.6536 16.2429 13.3748 16.2429C15.0961 16.2429 16.4845 14.8545 16.4845 13.1332C16.4845 11.412 15.0961 10.0236 13.3748 10.0236ZM13.3748 15.1549C12.2625 15.1549 11.3531 14.2483 11.3531 13.1332C11.3531 12.0182 12.2598 11.1115 13.3748 11.1115C14.4899 11.1115 15.3965 12.0182 15.3965 13.1332C15.3965 14.2483 14.4872 15.1549 13.3748 15.1549ZM17.337 9.89637C17.337 10.2996 17.0123 10.6217 16.6117 10.6217C16.2085 10.6217 15.8864 10.2969 15.8864 9.89637C15.8864 9.49582 16.2112 9.17105 16.6117 9.17105C17.0123 9.17105 17.337 9.49582 17.337 9.89637ZM19.3966 10.6325C19.3506 9.66091 19.1287 8.80027 18.4169 8.09119C17.7078 7.38211 16.8472 7.16019 15.8756 7.11147C14.8742 7.05464 11.8728 7.05464 10.8714 7.11147C9.90251 7.15748 9.04187 7.37941 8.33009 8.08849C7.6183 8.79757 7.39908 9.65821 7.35037 10.6298C7.29353 11.6312 7.29353 14.6326 7.35037 15.634C7.39637 16.6056 7.6183 17.4662 8.33009 18.1753C9.04187 18.8844 9.89981 19.1063 10.8714 19.155C11.8728 19.2118 14.8742 19.2118 15.8756 19.155C16.8472 19.109 17.7078 18.8871 18.4169 18.1753C19.126 17.4662 19.3479 16.6056 19.3966 15.634C19.4534 14.6326 19.4534 11.6339 19.3966 10.6325ZM18.1029 16.7084C17.8918 17.2389 17.4832 17.6475 16.95 17.8613C16.1516 18.178 14.2571 18.1049 13.3748 18.1049C12.4925 18.1049 10.5954 18.1753 9.79967 17.8613C9.26921 17.6502 8.86054 17.2416 8.64674 16.7084C8.33009 15.91 8.40316 14.0155 8.40316 13.1332C8.40316 12.2509 8.33279 10.3538 8.64674 9.55807C8.85784 9.02761 9.2665 8.61894 9.79967 8.40514C10.5981 8.08849 12.4925 8.16156 13.3748 8.16156C14.2571 8.16156 16.1543 8.09119 16.95 8.40514C17.4805 8.61624 17.8891 9.02491 18.1029 9.55807C18.4196 10.3565 18.3465 12.2509 18.3465 13.1332C18.3465 14.0155 18.4196 15.9127 18.1029 16.7084Z">
+                        </path>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1126_8312">
+                          <rect width="27" height="27" fill="white"></rect>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" aria-label="twitter">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 27 27" fill="none">
+                      <g clip-path="url(#clip0_1142_8345)">
+                        <path
+                          d="M17.0949 7.50488H19.0061L14.8318 12.2747L19.7424 18.7661H15.8984L12.8855 14.8301L9.44211 18.7661H7.52824L11.9921 13.6634L7.28461 7.50488H11.226L13.9466 11.1025L17.0949 7.50488ZM16.4235 17.6238H17.482L10.6494 8.5877H9.51249L16.4235 17.6238Z">
+                        </path>
+                      </g>
+                      <defs>
+                        <clipPath id="clip0_1142_8345">
+                          <rect width="27" height="27" fill="white"></rect>
+                        </clipPath>
+                      </defs>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" aria-label="linkdin">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 27 28" fill="none">
+                      <path
+                        d="M10.256 19.332H7.743v-8.095h2.513v8.095Zm-1.258-9.199a1.468 1.468 0 0 1-1.03-2.499 1.456 1.456 0 0 1 2.486 1.03c0 .803-.652 1.47-1.456 1.47Zm10.666 9.2h-2.508v-3.941c0-.94-.019-2.144-1.307-2.144-1.307 0-1.507 1.02-1.507 2.076v4.008H11.83v-8.095h2.41v1.105h.036c.336-.636 1.155-1.308 2.378-1.308 2.544 0 3.012 1.676 3.012 3.852v4.446h-.003Z">
+                      </path>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-8 col-md-12">
+          <div class="foot-links">
+            <div class="menu-link clearfix">
+              <div class="foot-title h5">Categories</div>
+              <ul class="ps-0 mb-0">
+                <li><a href="#">Internet</a></li>
+                <li><a href="#">Troubleshoot</a></li>
+                <li><a href="#">General</a></li>
+                <li><a href="#">How to</a></li>
+                <li><a href="#">Games</a></li>
+                <li><a href="#">Internet</a></li>
+                <li><a href="#">Troubleshoot</a></li>
+                <li><a href="#">General</a></li>
+                <li><a href="#">How to</a></li>
+                <li><a href="#">Games</a></li>
+              </ul>
+            </div>
+            <div class="newsletter">
+              <div class="foot-title h5">Subscribe</div>
+              <p>Unlock the Power of Play: Your Gateway to Gaming Insights and Adventures! </p>
+              <form role="subcribe" action="#">
+                <input type="email" placeholder="Email Address" title="subscribe" required="">
+                <button type="submit">
+                  <svg width="16" height="16" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="m17.707 9.293-5-5a.999.999 0 1 0-1.414 1.414L14.586 9H3a1 1 0 1 0 0 2h11.586l-3.293 3.293a.999.999 0 1 0 1.414 1.414l5-5a.999.999 0 0 0 0-1.414z"
+                      fill="#fff" />
+                  </svg>
+                </button>
+              </form>
+            </div>
+            <div class="contact d-flex align-items-center">
+              <svg width="16" height="16" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M255.4 48.2c.2-.1 .4-.2 .6-.2s.4 .1 .6 .2L460.6 194c2.1 1.5 3.4 3.9 3.4 6.5v13.6L291.5 355.7c-20.7 17-50.4 17-71.1 0L48 214.1V200.5c0-2.6 1.2-5 3.4-6.5L255.4 48.2zM48 276.2L190 392.8c38.4 31.5 93.7 31.5 132 0L464 276.2V456c0 4.4-3.6 8-8 8H56c-4.4 0-8-3.6-8-8V276.2zM256 0c-10.2 0-20.2 3.2-28.5 9.1L23.5 154.9C8.7 165.4 0 182.4 0 200.5V456c0 30.9 25.1 56 56 56H456c30.9 0 56-25.1 56-56V200.5c0-18.1-8.7-35.1-23.4-45.6L284.5 9.1C276.2 3.2 266.2 0 256 0z">
+                </path>
+              </svg>
+              <div>
+                <span class="h6 mb-0 text-white">Email Us :</span>
+                <a href="mailto:info@webgame.com"> info@webgame.com</a>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <p class="disclaimer">
+        <strong>DISCLAIMER:</strong> All the information, media, links, and other data provided on the website
+        are meant for reference as well as information purposes only. We do not claim the rightness of the
+        information as we
+        have utilized the web portals to collect and sort the information. Any user continuing with the steps
+        and services is solely responsible to check for the correctness of the resources. We do not take any
+        liability for the
+        errors, omissions, and services. Furthermore, we are not associated with the third-party sites mentioned
+        and hold no authority over the service offered by them.
+      </p>
+    </div>
+    <div class="copyright">
+      <div class="container d-grid">
+        <ul class="importants-links">
+          <li><a href="#">about Us</a></li>
+          <li><a href="#">contact Us</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">terma&Conditions</a></li>
+        </ul>
+        <span>
+          Copyright
+          <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14" fill="none">
+            <path
+              d="M6.66667 0C10.3467 0 13.3333 2.98667 13.3333 6.66667C13.3333 10.3467 10.3467 13.3333 6.66667 13.3333C2.98667 13.3333 0 10.3467 0 6.66667C0 2.98667 2.98667 0 6.66667 0ZM6.66667 1.33333C3.72 1.33333 1.33333 3.72 1.33333 6.66667C1.33333 9.61333 3.72 12 6.66667 12C9.61333 12 12 9.61333 12 6.66667C12 3.72 9.61333 1.33333 6.66667 1.33333ZM6.66667 3.33333C7.88 3.33333 8.942 3.982 9.52533 4.952L8.38267 5.638C8.20284 5.33816 7.94756 5.0907 7.64226 4.9203C7.33697 4.74989 6.99235 4.66249 6.64275 4.66682C6.29314 4.67115 5.95078 4.76704 5.6498 4.94495C5.34882 5.12285 5.09973 5.37655 4.92738 5.68075C4.75503 5.98494 4.66543 6.32901 4.66752 6.67863C4.66961 7.02825 4.76332 7.37122 4.9393 7.67333C5.11528 7.97544 5.36738 8.22614 5.67047 8.40044C5.97356 8.57473 6.31704 8.66652 6.66667 8.66667C7.01209 8.66689 7.35167 8.57759 7.6523 8.40747C7.95293 8.23736 8.20433 7.99223 8.382 7.696L9.52533 8.38133C9.15068 9.00708 8.5811 9.49265 7.90395 9.76357C7.2268 10.0345 6.47948 10.0758 5.7766 9.88115C5.07372 9.68651 4.45409 9.26667 4.01276 8.68603C3.57142 8.10539 3.33275 7.396 3.33333 6.66667C3.33333 4.82667 4.82667 3.33333 6.66667 3.33333Z"
+              fill="white"></path>
+          </svg>
+          <strong>2023 WebGame.</strong>All Rights Reserved
+        </span>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer End-->
+
+  <!-- Back top Button Start-->
+  <button title="back to top button" id="scroll_to_top"><svg width="16" fill="#fff" viewBox="0 -4.5 20 20"
+      xmlns="http://www.w3.org/2000/svg">
+      <g stroke-width="0" />
+      <g stroke-linecap="round" stroke-linejoin="round" />
+      <path
+        d="M19.708 10.634c.39-.405.39-1.06 0-1.464L11.444.607a1.95 1.95 0 0 0-2.827 0L.292 9.232c-.385.4-.39 1.048-.01 1.454a.976.976 0 0 0 1.425.01l7.617-7.893a.975.975 0 0 1 1.414 0l7.557 7.83a.974.974 0 0 0 1.413 0"
+        fill-rule="evenodd" />
+    </svg></button>
+  <!-- Back top Button  End-->
+
+  <script src="assets/js/script.js"></script>
+</body>
+
+</html>
