@@ -142,6 +142,10 @@ p {
   outline: none;
 }
 
+button {
+  cursor: pointer;
+}
+
 ::placeholder {
   color: #a7a6a6;
 

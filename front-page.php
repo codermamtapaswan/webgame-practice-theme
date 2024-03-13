@@ -20,7 +20,7 @@
                         $category = get_the_category($post->ID); // it will get array 
                         $catName = $category[0]->cat_name; ?>
 
-                         <div class="col-lg-7 d-flex">
+                         <div class="col-lg-7">
                                 <a href="<?php the_permalink();?>" class="wg-card-link">
                                     <div class="wg-overlay-card">
                                         <div class="img-placeholder">

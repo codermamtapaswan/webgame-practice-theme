@@ -42,9 +42,9 @@
                         </nav>
 
                         <div class="search-form">
-                            <form role="search" action="#">
-                                <input type="search" placeholder="Search Keyword..." value="" name="s"
-                                    title="Search for:" required="" />
+                            <form role="search" method="get" action="<?php echo home_url('/')?>">
+                                <input type="search" placeholder="<?php echo esc_attr_x('Search Keyword...','placeholder')?>" value="<?php echo get_search_query()?>" name="s"
+                                    title="<?php echo esc_attr_x('search for :','label')?>" required="">
                                 <button type="submit" class="search-btn">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
                                         fill="none">
@@ -92,18 +92,18 @@
                             <!--  -->
 
                             <div class="search-form">
-                                <form role="search" action="#">
-                                    <input type="search" placeholder="Enter To Search Here..." value="" name="s"
-                                        title="Search for:" required="" />
-                                    <button type="submit" class="search-btn">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
-                                            viewBox="0 0 16 16" fill="none">
-                                            <path
-                                                d="M7.333 12.667A5.333 5.333 0 1 0 7.333 2a5.333 5.333 0 0 0 0 10.667ZM14 14l-2.9-2.9"
-                                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                                        </svg>
-                                    </button>
-                                </form>
+                                <form role="search" method="get" action="<?php echo home_url('/')?>">
+                                <input type="search" placeholder="<?php echo esc_attr_x('Search Keyword...','placeholder')?>" value="<?php echo get_search_query()?>" name="s"
+                                    title="<?php echo esc_attr_x('search for :','label')?>" required="">
+                                <button type="submit" class="search-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16"
+                                        fill="none">
+                                        <path
+                                            d="M7.333 12.667A5.333 5.333 0 1 0 7.333 2a5.333 5.333 0 0 0 0 10.667ZM14 14l-2.9-2.9"
+                                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    </svg>
+                                </button>
+                            </form>
                             </div>
                             <hr>
                             <nav class="navbar">

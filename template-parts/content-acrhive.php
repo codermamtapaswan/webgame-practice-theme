@@ -2,43 +2,36 @@
     <div class="container sec-gap">
         <div class="all-page">
 
-            <p id="breadcrumbs">
-                <span><span class="breadcrumb_last" aria-current="page">Category</span></span>
-            </p>
+            <p>You searched for email</p>
 
-
-            <div class="row mb-30">
-
-                <?php
-                  if(have_posts()):
+            <div class="row">
+            <?php 
+                if(have_posts()):
                     while(have_posts()):
-                      the_post(); 
-                      
-                      // get_template_part('template-parts','card');
-                      
-                      endwhile;  ?>
-
+                        the_post(); ?>
+                        <div class="col-lg-3 col-md-6">
+                            <?php
+                            // search results 
+                             get_template_part("template-parts/content","card");
+                            ?>
+                        </div>
+                 <?php  endwhile; 
+                    // pagination
+                the_posts_pagination(
+                    array(
+                        'prev_text' => __('&laquo;', 'webgame'),
+                        'next_text' => __('&raquo;', 'webgame'),
+                    )
+              );  
+                             
+                else:
+                    //  if no post get
+                    echo "oops! there is no post yet ! ";
+                    
+                endif; ?> 
             </div>
-
-            <!-- pagination -->
-
-            <nav class="navigation pagination" aria-label="Posts">
-                <!-- <h2 class="screen-reader-text">Posts navigation</h2> -->
-                <div class="nav-links">
-                    <a class="next page-numbers" href="#">«</a>
-                    <span aria-current="page" class="page-numbers current">1</span>
-                    <a class="page-numbers" href="#">2</a>
-                    <a class="next page-numbers" href="#">»</a>
-                </div>
-            </nav>
-
-          <?php
-            else:
-              echo("Sorry! This Category don't have posts Yet.");
-            endif;
-          ?>
-
-
+           
+            
         </div>
     </div>
     <!--  -->
