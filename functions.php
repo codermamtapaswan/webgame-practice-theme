@@ -119,17 +119,6 @@ function mime_types_support( $mimes ) {
 add_filter( 'upload_mimes', 'mime_types_support' );
 
 
-
-
-
-
-
-
-
-
-
-
-
 ?>
 
 
